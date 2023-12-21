@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <div class="content pb-5">
+
+        <h1 class=" m-auto  text-center py-5"></h1>
+
+        <div class="inner-content container">
+            <h2 class=" text-center  mb-5"><i class="fa-solid fa-bookmark"></i><span class="mx-2">Bookmark your favorite sites</span><i class="fa-solid fa-bookmark"></i></h2>
+
+            <label for="sn" class="ms-3 mb-2"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+            <input id="sn" type="text" class="form-control mb-4" placeholder="Bookmark Name....">
+
+            <label for="su" class="ms-3 mb-2"><i class="fa-solid fa-paperclip me-2"></i>Site URL</label>
+            <input id="su" type="text" class="form-control" placeholder="Website URL...">
+
+            <input id="search" onkeyup="searchElement(this.value)" type="text" class="form-control mt-5" placeholder="Search....">
+
+            <div class="centerd-button text-center">
+                <button onclick="addData()" class="px-5 py-1 text-white rounded border-0 mt-4 fs-5 user-select-none" type="button">Submit</button>
+            </div>
+        </div>
+
+        <table class="table container mt-5 text-center overflow-auto">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                  </tr>
+            </thead>
+
+            <tbody id="tbody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>harry</td>
+
+                    <td>
+
+                        <button class="visit-button text-white px-3 py-1 rounded border-0" type="button"><i class="fa-solid fa-eye pe-2"></i>Visit
+                            <a href="https://www.google.com/"></a>
+                        </button>
+
+                    </td>
+                    
+                    
+                    <td>
+
+                        <button class="delete-button text-white px-3 py-1 rounded border-0" type="button"><i class="fa-solid fa-trash-can pe-2"></i>Delete</button>
+
+                    </td>
+
+                </tr> -->
+
+                
+
+            </tbody>
+
+          </table>
+
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
